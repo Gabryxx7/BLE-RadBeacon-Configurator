@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/device_container_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg"
+    android:backgroundTint="@color/colorIBeaconAvailable"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/bt_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/record_rssi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:gravity="left|center_vertical"
+                android:text="RSSI"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                tools:layout_editor_absoluteY="5dp" />
+
+            <ProgressBar
+                android:id="@+id/rssi_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.6"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <TextView
+                android:id="@+id/batteryLevel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:paddingLeft="5dp"
+                android:text="Battery"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="401dp"
+                tools:layout_editor_absoluteY="580dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="0.65"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/device_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NAME"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/device_mac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MAC"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/device_uuid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="UUID" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/device_id1_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="Major" />
+
+                    <TextView
+                        android:id="@+id/device_id2_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="minor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/device_id1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/device_id2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="500" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/record_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="distance" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/config_container"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="0.35"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/readButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:drawableRight="@drawable/rotating_progress_bar"
+                        android:enabled="false"
+                        android:text="Read"
+                        android:textSize="7dp" />
+
+                    <Button
+                        android:id="@+id/writeButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:drawableRight="@drawable/rotating_progress_bar"
+                        android:enabled="false"
+                        android:text="Update"
+                        android:textSize="7dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/record_adv_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:text="adv_rate"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/record_tx_power"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:text="tx_power"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/count_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:scaleX="0.85"
+                    android:scaleY="0.85"
+                    app:srcCompat="@drawable/ic_radio_button_checked_black_24dp" />
+
+                <TextView
+                    android:id="@+id/device_scanCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:text="Scan Count"
+                    android:textAlignment="viewStart" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/time_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:scaleX="0.85"
+                    android:scaleY="0.85"
+                    app:srcCompat="@drawable/ic_timer_black_24dp" />
+
+                <TextView
+                    android:id="@+id/redcord_ts"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    android:gravity="bottom|center_vertical"
+                    android:text="timestamp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/avail_time_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:scaleX="0.85"
+                    android:scaleY="0.85"
+                    app:srcCompat="@drawable/ic_history_black_24dp" />
+
+                <TextView
+                    android:id="@+id/device_availableTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    android:gravity="bottom|center_vertical"
+                    android:text="Available Time" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/configurable"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                app:srcCompat="@drawable/ic_build_black_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

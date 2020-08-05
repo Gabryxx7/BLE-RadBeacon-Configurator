@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3388C9</color>
+    <color name="colorBorder">#dadada</color>
+    <color name="colorBorderDark">#a6a6a6</color>
+    <color name="colorPrimaryDark">#18056f</color>
+    <color name="colorAccent">#c91b0e61</color>
+    <color name="colorDeviceAvailable">#F5F5F5</color>
+    <color name="colorDeviceAvailableText">#4D4D4D</color>
+    <color name="colorDeviceUnavailable">#E4E4E4</color>
+    <color name="colorDeviceUnavailableText">#A0A0A0</color>
+    <color name="colorIBeaconAvailable">#64CAFF</color>
+    <color name="colorIBeaconAvailableText">#FFFFFF</color>
+    <color name="colorIBeaconUnavailable">#A0D0F3</color>
+    <color name="colorIBeaconUnavailableText">#EBEBEB</color>
+    <color name="colorEddystoneUIDAvailable">#5AFC6B</color>
+    <color name="colorEddystoneUIDAvailableText">#FFFFFF</color>
+    <color name="colorEddystoneUIDUnavailable">#8BE297</color>
+    <color name="colorEddystoneUIDUnavailableText">#C2C2C2</color>
+    <color name="toolbarBackgroundColor">#E0AB07</color>
+    <color name="toolbarTextColor">#FFFFFF</color>
+</resources>

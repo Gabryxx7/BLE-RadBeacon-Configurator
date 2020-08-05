@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sort_action_name"
+        android:icon="@drawable/ic_arrow_upward_black_24dp"
+        android:orderInCategory="1"
+        android:title="Name" />
+    <item
+        android:id="@+id/sort_action_scantime"
+        android:icon="@drawable/ic_arrow_upward_black_24dp"
+        android:orderInCategory="5"
+        android:title="Scan Time" />
+    <item
+        android:id="@+id/sort_action_minor"
+        android:icon="@drawable/ic_arrow_upward_black_24dp"
+        android:orderInCategory="5"
+        android:title="Minor" />
+    <item
+        android:id="@+id/sort_action_major"
+        android:icon="@drawable/ic_arrow_upward_black_24dp"
+        android:orderInCategory="4"
+        android:title="Major" />
+    <item
+        android:id="@+id/sort_action_rssi"
+        android:icon="@drawable/ic_arrow_upward_black_24dp"
+        android:orderInCategory="3"
+        android:title="RSSI" />
+    <item
+        android:id="@+id/sort_action_mac"
+        android:icon="@drawable/ic_arrow_upward_black_24dp"
+        android:orderInCategory="2"
+        android:title="MAC" />
+    <item
+        android:id="@+id/sort_action_type"
+        android:icon="@drawable/ic_arrow_upward_black_24dp"
+        android:orderInCategory="0"
+        android:title="Device type" />
+</menu>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context=".Fragments.ConfigFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/row0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="keepEnabled"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Version"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/updated_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="01-01-1970"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/device_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintTop_toBottomOf="@id/version"
+                tools:layout_editor_absoluteX="-11dp" />
+
+            <Switch
+                android:id="@+id/sync_settings_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sync Settings"
+                app:layout_constraintTop_toBottomOf="@id/device_info"
+                tools:layout_editor_absoluteX="266dp" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="157dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/scanning_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/scanning_switch">
+
+                <View
+                    android:id="@+id/left_border"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="#ABABAB"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Scanning Period"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/SCAN_PERIOD_TIME_text"
+                    app:layout_constraintHorizontal_weight="0.2"
+                    app:layout_constraintLeft_toLeftOf="@+id/left_border"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/SCAN_PERIOD_TIME_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    app:layout_constraintHorizontal_weight="0.2"
+                    app:layout_constraintRight_toLeftOf="@+id/textView6"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="s"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/SCAN_PERIOD_TIME_text"
+                    app:layout_constraintHorizontal_weight="0.2"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Waiting Time"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/wait_time_text"
+                    app:layout_constraintLeft_toLeftOf="@+id/left_border"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <EditText
+                    android:id="@+id/wait_time_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    app:layout_constraintRight_toLeftOf="@+id/textView7"
+                    app:layout_constraintTop_toBottomOf="@+id/SCAN_PERIOD_TIME_text" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="s"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/wait_time_text"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Switch
+                android:id="@+id/scanning_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="45dp"
+                android:switchPadding="10dp"
+                android:text="Continuous Scanning" />
+
+            <View
+                android:id="@+id/divider12"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/apply_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply Settings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="10dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,20 @@
+{
+    "version": 0.001, //Version of the json file, used to decide whether to download a new one and update or not
+    "SCAN_UUIDS":"C58221BC-FA61-46E2-A151-D2C4710527D0", //UUID of the project's beacons
+    "SCAN_EDDYSTONE_NAMESPACES": "2f234454f4911ba9ffa6",
+    "SCAN_MODE": 2, //Android BLEScanner Scan_mode
+    "SCAN_MATCH_MODE": 1, //Android BLEScanner Scan_match_mode
+    "SCAN_CALLBACK_TYPE": 1, //Android BLEScanner Scan_callback_mode
+    "SCAN_NUM_MATCHES": 3, //Android BLEScanner Scan_callback_mode
+    "SCAN_TYPE": 0, //0 = continuous scan, 1 = scan-wait scan
+    "SCAN_PERIOD_TIME": 10000, //if SCAN_TYPE == [0 -> Scan continously, 1 -> scan for SCAN_PERIOD_TIME seconds and then wait for SCAN_WAIT_TIME seconds]
+    "SCAN_WAIT_TIME": 10000,
+    "SCAN_ONLY_PROJECT_BEACONS": true //Should we store data about the project beacons or should we store data aabout every single bluetooth device available?
+    "SCAN_ANDROID7_TIMEOUT_RESTART": 300000, //The continuous scan is actually fake, since Android 7.0 a BLE scan is useless after 30mins
+    "FILE_STORE_LOCAL": true, //Should we store the data on a local csv file?er)
+    "MAX_BLE_RETRY": 5, //How many time should we retry to start the BLE scanner in case it fails?
+    "SERVER_NOTIFICATION_TIME": 10000, //How often should we send a notification to the channel? We cannot just flood everytime an event happen
+    "TIME_BEFORE_UNAVAILABLE": 5000, //After how long we consider a beacon to be unavailable
+    "AVAILABILITY_CHECK_TIMER": 5000, //How often should we check for the beacon state?
+    "CHECK_SETTINGS_TIME": 60000 //How often should we check for a new settings file version?
+  }

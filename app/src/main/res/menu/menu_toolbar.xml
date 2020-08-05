@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_refresh"
+        android:enabled="true"
+        android:icon="@drawable/ic_refresh_white_24dp"
+        android:title="refresh"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/sort_menu"
+        android:icon="@drawable/ic_sort_white_24dp"
+        android:title="Filter"
+        android:visible="true"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/filter_menu"
+        android:icon="@drawable/ic_filter_list_white_24dp"
+        android:title="Item"
+        android:visible="true"
+        app:showAsAction="always">
+    </item>
+</menu>

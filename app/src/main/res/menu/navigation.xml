@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_scan"
+        android:icon="@drawable/ic_view_list_black_24dp"
+        android:title="@string/title_scan" />
+
+    <item
+        android:id="@+id/navigation_services"
+        android:icon="@drawable/ic_sync_black_24dp"
+        android:title="@string/title_services" />
+
+    <item
+        android:id="@+id/navigation_log"
+        android:icon="@drawable/ic_history_black_24dp"
+        android:title="@string/title_home" />
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_log"-->
+        <!--android:icon="@drawable/ic_info_black_24dp"-->
+        <!--android:title="@string/title_log" />-->
+
+    <item
+        android:id="@+id/navigation_config"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/title_config" />
+
+    <item
+        android:id="@+id/navigation_config_beacons"
+        android:icon="@drawable/ic_settings_backup_restore_black_24dp"
+        android:title="@string/title_config_beacons" />
+
+   <!-- <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_notifications_white_24dp"
+        android:title="@string/title_notifications" />-->
+
+</menu>

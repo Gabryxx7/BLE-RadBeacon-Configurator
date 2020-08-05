@@ -1,0 +1,2 @@
+rootProject.name='RadBeacon-Configurator-Android'
+include ':app'

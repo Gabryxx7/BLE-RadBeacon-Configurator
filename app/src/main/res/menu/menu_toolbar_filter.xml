@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/filter_action_ibeacons"
+        android:checkable="true"
+        android:title="iBeacons All"
+        android:visible="true" >
+
+        <menu>
+            <item
+                android:id="@+id/filter_action_configurable_radbeacons"
+                android:checkable="true"
+                android:title="Config. RadBeacons"
+                android:visible="true" />
+            <item
+                android:id="@+id/filter_action_project_ibeacons"
+                android:checkable="true"
+                android:title="Project iBeacons"
+                android:visible="true" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/filter_action_EddystoneUID"
+        android:checkable="true"
+        android:title="Eddystone UID"
+        android:visible="true" />
+    <item
+        android:id="@+id/filter_action_EddystoneURL"
+        android:checkable="true"
+        android:title="Eddystone URL"
+        android:visible="true" />
+</menu>

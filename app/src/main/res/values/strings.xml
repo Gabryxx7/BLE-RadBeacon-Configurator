@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">BLETracker</string>
+    <string name="title_home">Home</string>
+    <string name="title_log">Log</string>
+    <string name="title_config">Config</string>
+    <string name="title_config_beacons">Batch Config</string>
+    <string name="title_services">Services</string>
+    <string name="title_scan">Scanned Devices</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="local_service_connected">Service Connected </string>
+    <string name="local_service_started">Service Started </string>
+    <string name="local_service_label">Service Listening to: </string>
+    <string name="local_service_stopped">Service Stopped </string>
+    <string name="local_service_disconnected">Service Disconnected </string>
+    <string name="switch_on">Switch On</string>
+    <string name="switch_off">Switch Off</string>
+    <string name="arrow_up">&#129169;</string>
+    <string name="arrow_down">&#129171;</string>
+    <string name="project_identifiers">2f234454-cf6d-4a0f-adf2-f4911ba9ffa6 2f234454f4911ba9ffa6</string>
+    <!--<string name="test_code_delta">delta</string>-->
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
